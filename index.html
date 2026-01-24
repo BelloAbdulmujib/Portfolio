@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bello Abdulmujib - Full Stack Web Developer</title>
+    <link rel="stylesheet" href="/style/homepage.css">
+	<link rel="icon" href="../asset/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="http://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+    <!------ This script loads Email JS-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="../script/homepage.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Hero section -->
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-ab">AB</span><span class="logo-tech">tech</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Featured-projects">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </header>
+    
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="hero-text">
+                <h1>
+                    Hi, <br>
+                    <span>I'm Abdulmujib Bello 👨‍💻</span>
+                </h1>
+
+                <p class="typing">
+                    I'm a full-stack web developer with a passion for problem-solving.
+                    I build clean, <br>functional, and scalable modern web applications with
+                    a strong <br>focus on user experience, performance, and maintainable code.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#Featured-projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="../asset/passport.jpg" alt="Abdulmujib Bello" class="profile-pic">
+        </div>
+    </section>
+    
+    <!-- Projects section -->
+    <section id="Featured-projects">
+        <h1 class="project-tittle">Portfolio</h1>
+        <p>Explore a selection of projects that reflects my problem solving approach and technical expertise</p> 
+        <div class="projects-containers">
+            <div class="project-card">
+                <h2>Vougue Vista</h2>
+                <img src="../asset/MedEase_Home_page.PNG" alt="project1" class="project-image"/>
+                <h4><button class="view-details-btn">View details</button></h4>
+                
+                <!-- 🔽 Hidden overview -->
+                <div class="project-overview">
+                    <h4>Overview</h4>
+                    <p>
+                        Vougue Vista is a full-stack e-commerce web application built to support
+                        online shopping for unisex fashion items, including clothing and footwear.
+                        The platform provides a secure and intuitive shopping experience.
+                    </p>
+
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>User authentication and session management</li>
+                        <li>Product listing with detailed views</li>
+                        <li>Shopping cart and order processing</li>
+                        <li>Inventory management for admin users</li>
+                    </ul>
+
+                    <h4>Tech Stack</h4>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Backend:</strong> Python (Flask)</li>
+                        <li><strong>Database:</strong> SQLite, SQLAlchemy</li>
+                        <li><strong>Auth:</strong> Flask-Login</li>
+                        <li><strong>Payments:</strong> PayPal API</li>
+                    </ul>
+                </div>
+                
+                <a href="#" class="project-link">Visit Website</a>
+            </div>
+            <div class="project-card">
+                <h2>MedEase</h2>
+                <img src="../asset/MedEase_Home_page.PNG" alt="project1" class="project-image"/>
+                <h4><button class="view-details-btn">View details</button></h4>
+                
+                <!-- 🔽 Hidden overview -->
+                <div class="project-overview">
+                    <h4>Overview</h4>
+                    <p>
+                        MedEase is a healthcare web application designed 
+                        to simplify hospital appointment scheduling. It allows 
+                        patients to book and manage appointments online before 
+                        consulting a doctor, reducing waiting times and improving hospital 
+                        workflow efficiency.
+                    </p>
+
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Appointment scheduling system</li>
+                        <li>Patient-friendly interface</li>
+                        <li>Structured appointment management</li>
+                        <li>Reduced physical hospital queues</li>
+                    </ul>
+
+                    <h4>Tech Stack</h4>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Backend:</strong> Python (Flask)</li>
+                        <li><strong>Database:</strong> MySQL, SQLAlchemy</li>
+                        <li><strong>Auth:</strong> Flask-Login</li>
+                    </ul>
+                </div>
+                
+                <a href="#" class="project-link">Visit Website</a>
+            </div>
+            <div class="project-card">
+                <h2>ThreadCraft Contour</h2>
+                <img src="../asset/elegant-clothings.jpg" alt="project1" class="project-image"/>
+                <h4><button class="view-details-btn">View details</button></h4>
+                
+                <!-- 🔽 Hidden overview -->
+                <div class="project-overview">
+                    <h4>Overview</h4>
+                    <p>
+                        ThreadCraft Contour is a fashion and tailoring platform focused 
+                        on African-inspired clothing, especially caftans and custom designs. 
+                        The website allows customers to explore styles, view design previews, 
+                        and place informed clothing orders.
+                    </p>
+
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Fashion design showcase</li>
+                        <li>Style preview gallery</li>
+                        <li>Customer order flow</li>
+                        <li>Brand-focused UI</li>
+                    </ul>
+
+                    <h4>Tech Stack</h4>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Backend:</strong> Python (Flask)</li>
+                    </ul>
+                </div>
+                
+                <a href="#" class="project-link">Visit Website</a>
+            </div>
+            <div class="project-card">
+                <h2>Lexxi Constructions</h2>
+                <img src="../asset/civilEngwebsite.PNG" alt="project1" class="project-image"/>
+                <h4><button class="view-details-btn">View details</button></h4>
+                
+                <!-- 🔽 Hidden overview -->
+                <div class="project-overview">
+                    <h4>Overview</h4>
+                    <p>
+                        Lexie Constructions is a corporate website developed to present 
+                        the company's services, completed projects, and architectural design 
+                        catalog. It serves as a digital portfolio that helps potential clients 
+                        understand the company's expertise and construction standards.
+                    </p>
+
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Company portfolio showcase</li>
+                        <li>Services overview</li>
+                        <li>Design catalog display</li>
+                        <li>Responsive layout</li>
+                    </ul>
+
+                    <h4>Tech Stack</h4>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Backend:</strong> node.js</li>
+                    </ul>
+                </div>
+                
+                <a href="#" class="project-link">Visit Website</a>
+            </div>
+            <div class="project-card">
+                <h2>Quiz App</h2>
+                <img src="../asset/Quizeapp.PNG" alt="project1" class="project-image"/>
+                <h4><button class="view-details-btn">View details</button></h4>
+                
+                <!-- 🔽 Hidden overview -->
+                <div class="project-overview">
+                    <h4>Overview</h4>
+                    <p>
+                        The Quiz App is an interactive educational platform 
+                        created for elementary-level children to improve cognitive 
+                        skills through timed, level-based quizzes. Users must complete 
+                        each level successfully to progress, encouraging logical thinking
+                         and fast decision-making.
+                    </p>
+
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Timed quiz sessions</li>
+                        <li>Level-based progression system</li>
+                        <li>Instant feedback on answers</li>
+                        <li>Child-friendly interface</li>
+                    </ul>
+
+                    <h4>Tech Stack</h4>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Logic Handling:</strong> JavaScrip</li>
+                    </ul>
+                </div>
+                
+                <a href="#" class="project-link">Visit Website</a>
+            </div>
+            <div class="project-card">
+                <h2>To-Do List</h2>
+                <img src="../asset/todolist.PNG" alt="project1" class="project-image" />
+                <h4><button class="view-details-btn">View details</button></h4>
+                
+                <!-- 🔽 Hidden overview -->
+                <div class="project-overview">
+                    <h4>Overview</h4>
+                    <p>
+                        The To-Do List App is a simple yet effective productivity application 
+                        that helps users organize daily tasks, track progress, and manage personal 
+                        goals. Tasks can be added, marked as completed, or deleted when no longer 
+                        needed.
+                    </p>
+
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Task creation and deletion</li>
+                        <li>Completion tracking</li>
+                        <li>Clean and minimal UI</li>
+                        <li>Improved time management</li>
+                    </ul>
+
+                    <h4>Tech Stack</h4>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Storage:</strong> Local Storage</li>
+                    </ul>
+                </div>
+                
+                <a href="#" class="project-link">Visit Website</a>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="about-container">
+
+            <!-- About Text -->
+            <div class="about-text">
+                <h1>About Me</h1>
+
+                <p>
+                    I'm <strong>Abdulmujib Bello</strong>, an ALX-certified Software Engineer with a
+                    background in Chemical Engineering. I'm passionate about building functional,
+                    user-focused digital solutions and continuously expanding my technical skill set.
+                </p>
+
+                <p>
+                    I specialize in creating intuitive web experiences using
+                    <strong>HTML, CSS, JavaScript, React, Next.js, Python (Flask)</strong>, and modern development tools.
+                    I have built projects such as a full-stack e-commerce platform, a hospital
+                    appointment booking system, and other practical web applications.
+                </p>
+
+                <p>
+                    My journey blends engineering discipline, attention to detail, and a strong passion
+                    for technology, allowing me to approach challenges creatively and deliver scalable,
+                    maintainable solutions.
+                </p>
+
+                <!-- CV Button -->
+                <a href="../asset/BELLO ABDULMUJIB'S CV.pdf" download class="btn primary">
+                    Download CV
+                </a>
+            </div>
+
+            <!-- Quick Facts -->
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h2>ALX</h2>
+                    <p>Software Engineering Certified</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>5+</h2>
+                    <p>Completed Projects</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>Full-Stack</h2>
+                    <p>Web Development</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>Open</h2>
+                    <p>To Opportunities</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="quick-facts">
+    <h1 class="quick-title">Quick Facts</h1>
+
+    <div class="quick-wrapper">
+
+        <!-- EXPERIENCE -->
+        <div class="quick-experience">
+            <h3><i class="fas fa-briefcase"></i> Experience</h3>
+
+            <div class="experience-block">
+                <h4>Junior Software Developer at African Lion Associates <span>(2024)</span></h4>
+                <ul>
+                    <li>Developed and maintained web applications using HTML, CSS, and Python.</li>
+                    <li>Assisted in building responsive and interactive user interfaces with React.</li>
+                    <li>Collaborated with designers to implement modern, mobile-first layouts.</li>
+                    <li>Worked with senior developers to maintain scalable and clean codebases.</li>
+                    <li>Participated in code reviews to improve code quality and performance.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <h4>Freelance Web Developer</h4>
+                <ul>
+                    <li>Designed and developed custom websites using HTML, CSS, and JavaScript.</li>
+                    <li>Focused on accessibility, performance, and user-friendly design.</li>
+                    <li>Managed collaborative development using Git and GitHub.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <h4>Open Source Contributor</h4>
+                <ul>
+                    <li>Fixed bugs, added features, and improved documentation.</li>
+                    <li>Reviewed and merged pull requests while maintaining high code quality.</li>
+                    <li>Followed project standards and collaboration best practices.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE CARDS -->
+        <div class="quick-side">
+
+            <div class="quick-card">
+                <i class="fas fa-location-dot"></i>
+                <h3>Location</h3>
+                <p>Based in Abuja, Nigeria. Available for remote and collaborative projects.</p>
+            </div>
+
+            <div class="quick-card">
+                <i class="fas fa-clock"></i>
+                <h3>Availability</h3>
+                <p>
+                    Monday – Thursday: <strong>9:00 AM – 6:00 PM</strong><br>
+                    Friday: <strong>9:00 AM – 4:00 PM</strong>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <section id="skills">
+        <h1 class="skills-tittle">My Skills</h1>
+        <div class="skill-container">
+            <div class="skill-card">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h2>Design</h2>
+                <ul>
+                    <li>UI/UX Design</li>
+                    <li>Brand Identity</li>
+                    <li>Wireframing</li>
+                    <li>Graphic Design</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-server"></i>
+                <h2>Backend</h2>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>REST APIs</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-toolbox"></i>
+                <h2>Tools and Platforms</h2>
+                <ul>
+                    <li>Figma</li>
+                    <li>Vs Code</li>
+                    <li>Git & GitHub</li>
+                    <li>AWS</li>
+                    <li>Netlify</li>
+                    <li>Render</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services offer section -->
+    <section id="services">
+        <h1 class="services-title">My Services</h1>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>UI / UX Design</h2>
+                <p>
+                    I design clean, intuitive, and user-centered interfaces that enhance usability,
+                    improve accessibility, and create engaging digital experiences.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>
+                    I build fast, scalable, and responsive web applications using modern technologies,
+                    ensuring clean code structure and optimal performance.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-palette"></i>
+                <h2>Brand Identity</h2>
+                <p>
+                    I help translate ideas into strong digital identities by creating consistent
+                    visuals, layouts, and design systems that reflect your brand's vision.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Responsive Design</h2>
+                <p>
+                    I ensure websites adapt seamlessly across all devices, delivering a smooth and
+                    consistent experience on mobile, tablet, and desktop screens.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Design</h2>
+                <p>
+                    I design efficient and secure database structures that support scalability,
+                    data integrity, and smooth backend operations.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Codebase Maintenance</h2>
+                <p>
+                    I maintain, refactor, and optimize existing codebases to improve performance,
+                    readability, security, and long-term maintainability.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!---- Contact Section ---->
+    <section id="contact">
+        <div class="Contact-container">
+
+            <!-- Intro Text -->
+            <div class="contact-intro">
+                <h1>Let's Build Something Great Together</h1>
+                <p>
+                    Have a project in mind or need a developer to bring your ideas to life?
+                    I'm open to collaborations, freelance work, and full-time opportunities.
+                    Let's talk.
+                </p>
+                <!-- Contact Links and icons -->
+                <div class="contact-icons">
+                    <a href="mailto:belloabdulmujib3@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/BelloAbdulmujib" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/abdulmujib-bello" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/BelloAbdulmujib/" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <!-- Contact Card -->
+                <div class="contact-card">
+                    <h2>Get in Touch</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project discussion" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell me about your project..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn">Send Message</button>
+
+                        <div id="formStatus" class="status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating CTA -->
+    <a href="https://wa.me/2348136345909" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat with me</span>
+    </a>
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <p class="footer-note">
+                Designed and built by <strong>Abdulmujib Bello</strong>, focused on clean code,
+                thoughtful design, and scalable web solutions.
+            </p>
+
+            <div class="footer-socials">
+                <a href="https://github.com/BelloAbdulmujib" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/abdulmujib-bello" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/BelloAbdulmujib" target="_blank" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#Featured-projects">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Bottom -->
+        <p class="footer-copy">
+            © <span id="year"></span> Abdulmujib Bello. All rights reserved.
+        </p>
+    </div>
+</footer>
