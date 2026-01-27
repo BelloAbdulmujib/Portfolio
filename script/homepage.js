@@ -14,16 +14,24 @@ buttons.forEach(button => {
 });
 
 /* nav menu toggle script */
-const toggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.nav-menu');
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.querySelector(".nav-menu");
 
-toggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");      // show/hide dropdown
+    menuToggle.classList.toggle("active");   // animate hamburger
 });
 
-/* Footer year auto update */
-document.getElementById("year").textContent = new Date().getFullYear();
+/*scrollup botton script */
+const scrollBtn = document.getElementById("scrollTopBtn");
 
+window.addEventListener("scroll", () => {
+    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 /* Contact form*/
 (function () {
@@ -62,3 +70,6 @@ form.addEventListener("submit", function (e) {
             button.disabled = false;
         });
 });
+
+/* Footer year auto update */
+document.getElementById("year").textContent = new Date().getFullYear();

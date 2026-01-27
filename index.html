@@ -29,9 +29,11 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>              
     </header>
     
     <!-- Hero section -->
@@ -43,9 +45,9 @@
                 </h1>
 
                 <p class="typing">
-                    I'm a full-stack web developer with a passion for problem-solving.
-                    I build clean, <br>functional, and scalable modern web applications with
-                    a strong <br>focus on user experience, performance, and maintainable code.
+                    I'm a full-stack web developer with a passion for problem-solving.<br>
+                    I build clean, functional, and scalable modern web applications <br>with
+                    a strong focus on user experience, performance, and <br>maintainable code.
                 </p>
 
                 <div class="hero-buttons">
@@ -419,7 +421,7 @@
                     <li>Python</li>
                     <li>Flask</li>
                     <li>REST APIs</li>
-                    <li>Node.js</li>
+                    <li>Django</li>
                 </ul>
             </div>
             <div class="skill-card">
@@ -490,14 +492,15 @@
 
             <div class="service-card">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
-                <h2>Codebase Maintenance</h2>
+                <h2>Website Maintenance</h2>
                 <p>
-                    I maintain, refactor, and optimize existing codebases to improve performance,
+                    I maintain, refactor, and optimize existing websites to improve performance,
                     readability, security, and long-term maintainability.
                 </p>
             </div>
         </div>
     </section>
+
     <!---- Contact Section ---->
     <section id="contact">
         <div class="Contact-container">
@@ -570,6 +573,9 @@
         <i class="fab fa-whatsapp"></i>
         <span class="wa-tooltip">Chat with me</span>
     </a>
+    <button id="scrollTopBtn" aria-label="Scroll to top">
+        ↑
+    </button>    
 </body>
 
 <footer class="footer">
