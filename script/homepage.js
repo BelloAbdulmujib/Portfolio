@@ -1,4 +1,3 @@
-/* "use strict"; */
 /** project card view/hide details script */
 const buttons = document.querySelectorAll(".view-details-btn");
 
@@ -70,6 +69,15 @@ form.addEventListener("submit", function (e) {
             button.disabled = false;
         });
 });
+
+/** Hides loader after page loads */
+window.addEventListener("load", () => {
+    const loader = document.getElementById("page-loader");
+    setTimeout(() => {
+        loader.classList.add("hide");
+    }, 800); // smooth delay
+})
+
 
 /* Footer year auto update */
 document.getElementById("year").textContent = new Date().getFullYear();

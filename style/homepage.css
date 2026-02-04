@@ -1112,6 +1112,89 @@ body{
     transform: translateY(0);
 }
 
+/* ===== PAGE LOADER ===== */
+#page-loader {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #020617, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#page-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-wrapper {
+    text-align: center;
+    color: #fff;
+}
+
+/* Logo / Initials */
+.loader-logo {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(156, 146, 2);
+    animation: pulse 1.6s infinite ease-in-out;
+}
+
+/* Progress Bar */
+.loader-bar {
+    width: 200px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    margin: 20px auto 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loader-bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgb(156, 146, 2),
+        transparent
+    );
+    animation: loadingBar 1.2s infinite ease-in-out;
+}
+
+/* Text */
+.loader-text {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes loadingBar {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(250%);
+    }
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
 /* FOOTER */
 .footer {
     background: #0b1220;

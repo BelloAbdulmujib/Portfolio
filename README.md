@@ -2,15 +2,15 @@
 
 # Overview
 
-This is my *personal portfolio website*, built to showcase my skills, experience, and projects as a *Junior Software Developer / Full‑Stack Web Developer*. The website serves as a professional online presence where potential employers, collaborators, and clients can easily learn about me, explore my work, and get in touch.
+This is my **personal portfolio website**, built to showcase my skills, experience, and projects as a **Junior Software Developer / Full‑Stack Web Developer**. The website serves as a professional online presence where potential employers, collaborators, and clients can easily learn about me, explore my work, and get in touch.
 
-The portfolio is designed with a strong focus on *clean UI*, *responsiveness*, *accessibility*, and *performance*, following modern web development best practices.
+The portfolio is designed with a strong focus on **clean UI**, **responsiveness**, **accessibility**, and **performance**, following modern web development best practices.
 
 
 ## Live Preview
 
-> *Live link will be added once deployed*
-> (Planned deployment via **GitHub Pages** or **Netlify**)
+> **Live link**
+> https://abtechk.netlify.app
 
 
 ## Features
@@ -53,9 +53,8 @@ The portfolio is designed with a strong focus on *clean UI*, *responsiveness*, *
 * **Font Awesome** – Icons (including X/Twitter, WhatsApp, etc.)
 * **EmailJS** – Contact form email handling
 * **Git & GitHub** – Version control
-* **Netlify / GitHub Pages** – Deployment
+* **Netlify** – Deployment
 
----
 
 ## Design Philosophy
 
@@ -162,6 +161,6 @@ I am a Chemical Engineering graduate with a strong passion for software developm
 
 This project is open for learning and inspiration purposes. Feel free to explore the code, but please credit the author if reused.
 
-Thank you for visiting my portfolio website
+Thank you for visiting my portfolio website.
 
 ⭐ If you like this portfolio or found inspiration from it, feel free to star the repository once it’s live.
